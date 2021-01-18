@@ -1,6 +1,10 @@
-function printTo100() {
-for(var i = 1; i<=100; i++) {
-console.log(i)
-}
-}
-printTo100()
+function FizzBuzz() {
+    for(var i = 1; i<=100; i++) { 
+    if (Number.isInteger(i/3)) {
+    console.log('Fizz')
+    } else{
+    console.log(i)
+    }
+    }
+    }
+    FizzBuzz()
