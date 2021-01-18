@@ -1,4 +1,6 @@
-function fizzbuzz() {
-console.log('Hello world')
+function printTo100() {
+for(var i = 1; i<=100; i++) {
+console.log(i)
 }
-fizzbuzz()
+}
+printTo100()
