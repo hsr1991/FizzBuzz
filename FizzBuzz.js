@@ -23,32 +23,42 @@
     //  }
     // }
     // FizzBuzz()
-
-    function FizzBuzz () {
-        for (var i = 1; i <=300; i++) {
-            var output = [];
-            
-            if (i%3 === 0) {
-                output.push('Fizz')
-            }
-            if (i%13 === 0) {
-                output.push('Fezz')
-            }
-            if (i%5 === 0) {
-                output.push('Buzz')
-            }
-            if (i%7 === 0) {
-                output.push('Bang')
-            }
-            if (i%11 === 0) {
-                output = ['Bong']
-            }
-            if (i%17===0) {
-                output.reverse()
-            }
-            console.log(output.join(''))
-        }
-        
-    }
-    FizzBuzz()
+    //const readline = require('readline-sync');
     
+    function FizzBuzz () {
+    
+        // console.log('Please enter a number:')
+         //const number = readline.prompt();
+             for (var i = 1; i<=300; i++) {
+                 var output = [];
+     
+                 if (i%3 === 0) {
+                     output.push('Fizz')
+                   }
+                 if (i%13 === 0) {
+                     output.push('Fezz')
+                 }
+                 if (i%5 === 0) {
+                     output.push('Buzz')
+                 }
+                 if (i%7 === 0) {
+                     output.push('Bang')
+                 }
+                 if (i%11 === 0) {
+                     output = ['Bong']
+                 }
+                 if (i%11 === 0 && i%13 ===0) {
+                     output = ['FezzBong']
+                 }
+                 if (output.length === 0) {
+                     output.push(i)
+                 }
+                 if (i%17===0) {
+                     output.reverse()
+                     }
+     
+                 console.log(output.join(''))
+             }
+         }
+         FizzBuzz()
+         
