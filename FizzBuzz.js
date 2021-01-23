@@ -23,13 +23,14 @@
     //  }
     // }
     // FizzBuzz()
-    //const readline = require('readline-sync');
+    const readline = require('readline-sync');
     
     function FizzBuzz () {
     
-        // console.log('Please enter a number:')
-         //const number = readline.prompt();
-             for (var i = 1; i<=300; i++) {
+    console.log('Please enter a number:')
+    const number = readline.prompt();
+
+             for (var i = 1; i<=number; i++) {
                  var output = [];
      
                  if (i%3 === 0) {
